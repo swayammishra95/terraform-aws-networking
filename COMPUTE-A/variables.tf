@@ -1,0 +1,13 @@
+variable "key_name" {}
+variable "public_key_path" {}
+variable "instance_type" {}
+variable "ebs_volume_size" {}
+variable "public_sg" {}
+variable "max_size" {}
+variable "min_size" {}
+variable "health_check_grace_period" {}
+variable "health_check_type" {}
+variable "desired_nodes" {}
+variable "public_subnets" {}
+variable "lb_target_group_arn" {}
+variable "user_data_path" {}
