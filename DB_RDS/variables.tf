@@ -1,0 +1,11 @@
+variable "rds_subnet_group" {}
+variable  "allocated_storage" {}   
+variable  "engine" {}
+variable  "engine_version" {}       
+variable  "instance_class" {}      
+variable  "name" {}                 
+variable  "username" {}             
+variable  "password" {}             
+variable  "parameter_group_name" {} 
+variable  "skip_final_snapshot" {}
+variable  "RDS_SG_IDs" {} 
