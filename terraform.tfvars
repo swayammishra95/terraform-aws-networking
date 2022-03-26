@@ -1,5 +1,4 @@
 access_ip = "0.0.0.0/0"
 username = "swayam"
 password = "swayam123"
-AWS_ACCESS_KEY = "AKIA4PCR4ZWNAKJB45YB"
-AWS_SECRET_KEY = "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"
+
