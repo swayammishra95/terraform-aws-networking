@@ -64,7 +64,7 @@ module "COMPUTE-A" {
   source = "./COMPUTE-A"
   key_name                  = "Mykey"
   #   public_key_path           = "/home/ubuntu/.ssh/mykey.pub"
-  public_key_path           = '''-----BEGIN RSA PRIVATE KEY-----
+  public_key_path           = "-----BEGIN RSA PRIVATE KEY-----
 MIIEpQIBAAKCAQEA1q+kM2pr3Z/yraCAFR/ClAJwLDLD3WM6uMbCYrwEcA5ayRva
 LKas144MLnQoXFtexPoyGFCXglw1Q8ap0biERdQhSqI93Pfv25W5QwwqVUrxmmNq
 l9ljtXZITZspSE+p/eXBy9Kj9b1LxH0WdiVU6tIXoxQOOCIrM+09FwuIM8V4G/N4
@@ -90,7 +90,7 @@ eHG/kSkmEVQAIFeB4/Am/sWXRKP8YY87P+sIuM7fNtqhiCOZP8JRCVaZgMsM92BU
 yVS+8ycCgYEAj1WgmSCDvxdW8TBdOnjxHEl4m/R8qnV0qRKAzMXazJSMrBv7oGkh
 HOyErF4SpOImVGsg3IJ9mGs4R+yMI6dgNO9nbH5eyK7dUZ72UlGEXsw+3Ind/b6W
 75o4IXmco7AJ+aGkQk4H1QJXSpMNiQ59P4uiwEidrp0bDKEobwaDTkU=
------END RSA PRIVATE KEY----'''
+-----END RSA PRIVATE KEY----"
   instance_type             = "t2.micro"
   ebs_volume_size           = 8
   public_sg                 = module.SECGRP.LB_SG_IDs
