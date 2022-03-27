@@ -60,20 +60,20 @@ module "Loadbalancer" {
 #   user_data_path = "${path.root}/userdata.tpl"
 # }
 
-module "COMPUTE-A" {
-  source = "./COMPUTE-A"
+#module "COMPUTE-A" {
+  #source = "./COMPUTE-A"
   #key_name                  = "Mykey"
   #   public_key_path           = "/home/ubuntu/.ssh/mykey.pub"
   #public_key_path           = "/home/ubuntu/.ssh/mykey.pub"
-  instance_type             = "t2.micro"
-  ebs_volume_size           = 8
-  public_sg                 = module.SECGRP.LB_SG_IDs
-  max_size                  = 4
-  min_size                  = 1
-  health_check_grace_period = 300
-  health_check_type         = "ELB"
-  desired_nodes             = 2
-  public_subnets            = module.SUBNETS.lb_subnets
-  lb_target_group_arn       = module.Loadbalancer.lb_target_group_arn
-  #user_data_path            = "${path.root}/userdata.tpl"
-}
+  #instance_type             = "t2.micro"
+  #ebs_volume_size           = 8
+  #public_sg                 = module.SECGRP.LB_SG_IDs
+  #max_size                  = 4
+  #min_size                  = 1
+  #health_check_grace_period = 300
+  #health_check_type         = "ELB"
+  #desired_nodes             = 2
+  #public_subnets            = module.SUBNETS.lb_subnets
+  #lb_target_group_arn       = module.Loadbalancer.lb_target_group_arn
+ # #user_data_path            = "${path.root}/userdata.tpl"
+#}
