@@ -62,7 +62,7 @@ module "Loadbalancer" {
 
 module "COMPUTE-A" {
   source = "./COMPUTE-A"
-  key_name                  = "Mykey"
+  #key_name                  = "Mykey"
   #   public_key_path           = "/home/ubuntu/.ssh/mykey.pub"
   #public_key_path           = "/home/ubuntu/.ssh/mykey.pub"
   instance_type             = "t2.micro"
