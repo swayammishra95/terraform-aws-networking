@@ -64,7 +64,7 @@ module "COMPUTE-A" {
   source = "./COMPUTE-A"
   key_name                  = "Mykey"
   #   public_key_path           = "/home/ubuntu/.ssh/mykey.pub"
-  public_key_path           = "/home/ec2-user/.ssh/mykey.pub"
+  public_key_path           = "/home/ec2-user/.ssh/mykey"
   instance_type             = "t2.micro"
   ebs_volume_size           = 8
   public_sg                 = module.SECGRP.LB_SG_IDs
