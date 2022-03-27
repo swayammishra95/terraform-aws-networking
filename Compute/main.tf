@@ -17,10 +17,10 @@ resource "random_id" "My_node_id" {
     }
 }
 
-resource "aws_key_pair" "My_auth" {
-  key_name   = "var.key_name"
-  public_key = file(var.public_key_path)
-}
+#resource "aws_key_pair" "My_auth" {
+  #key_name   = "var.key_name"
+  #public_key = file(var.public_key_path)
+#}
 
 resource "aws_instance" "My_node" {
     count = var.instance_count
@@ -29,10 +29,10 @@ resource "aws_instance" "My_node" {
     tags = {
         Name = "My_node-${random_id.My_node_id[count.index].dec}"
     }
-key_name = aws_key_pair.My_auth.id
+#key_name = aws_key_pair.My_auth.id
 vpc_security_group_ids = var.public_sg
 subnet_id = var.public_subnets[count.index]
-user_data = templatefile(var.user_data_path,{nodename = "My_node-${random_id.My_node_id[count.index].dec}"})
+#user_data = templatefile(var.user_data_path,{nodename = "My_node-${random_id.My_node_id[count.index].dec}"})
 root_block_device {
     volume_size = var.volume_size
 }
