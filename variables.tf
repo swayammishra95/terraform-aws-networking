@@ -10,4 +10,5 @@ variable "username" {
 variable "password" {
   
 }
-
+variable "my-access-key"{}
+variable "my-secret-key"{}
